@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st RODAC Airsoft Challenge Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>1st RODAC Airsoft Challenge</h1>
+        <p>October 20-22, 2024 | RODAC Grounds</p>
+        <a href="#register" class="btn-register">Register Now</a>
+    </header>
+
+    <section id="event-details">
+        <h2>Event Details</h2>
+        <p>Join the ultimate test of skill, strategy, and teamwork at the 1st RODAC Airsoft Challenge.</p>
+        <p>Date: October 20-22, 2024</p>
+        <p>Location: RODAC Grounds, Location XYZ</p>
+    </section>
+
+    <section id="register">
+        <h2>Register Your Team</h2>
+        <form id="registrationForm">
+            <label for="team-name">Team Name:</label>
+            <input type="text" id="team-name" name="team-name" required><br>
+
+            <label for="captain-name">Team Captain's Full Name:</label>
+            <input type="text" id="captain-name" name="captain-name" required><br>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Contact Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="team-members">Number of Team Members:</label>
+            <input type="number" id="team-members" name="team-members" min="5" max="10" required><br>
+
+            <label for="payment-method">Preferred Payment Method:</label>
+            <select id="payment-method" name="payment-method">
+                <option value="gcash">GCash</option>
+                <option value="bank-transfer">Bank Transfer</option>
+                <option value="paypal">PayPal</option>
+            </select><br>
+
+            <label for="team-photo">Upload Team Photo:</label>
+            <input type="file" id="team-photo" name="team-photo"><br>
+
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I agree to the <a href="#">Terms and Conditions</a></label><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact us at: airsoft@rodac.com | Phone: 123-456-7890</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
